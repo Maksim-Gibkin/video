@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 488px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+  @media (max-width: 1139px) {
+    & {
+      font-size: 14px;
+    }
+  }
+}
+
+.img {
+  max-width: 100%;
+  max-height: 272px;
+  object-fit: cover;
+  border-radius: 15px;
+
+  margin-bottom: 10px;
+}

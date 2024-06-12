@@ -1,0 +1,22 @@
+.advertisement {
+  display: none;
+
+  border-radius: 15px;
+  max-width: 488px;
+  height: 774px;
+  background: var(--gray);
+
+  .link {
+    max-width: 300px;
+    max-height: 600px;
+    overflow: hidden;
+  }
+
+  @media (min-width: 1440px) {
+    & {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+:root {
+  --font: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font), serif;
+}
+
+.videoPage {
+  text-align: center;
+  background: var(--black);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 36px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: start;
+  margin-block: 91px 32px;
+
+  @media (max-width: 1023px) {
+    & {
+      font-size: 20px;
+      margin-block: 62px 24px;
+    }
+  }
+  @media (max-width: 743px) {
+    & {
+      font-size: 16px;
+      margin-block: 34px 16px;
+    }
+  }
+}
+
+.videoList {
+  display: grid;
+  grid-template-columns: minmax(240px, 488px) minmax(240px, 488px);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-items: center;
+}
+
+.item {
+}
+
+.paginatorBlock {
+  margin-top: -24px;
+  grid-column-end: span 2;
+  width: 100%;
+
+  @media (max-width: 743px) {
+    & {
+      display: none;
+    }
+  }
+}

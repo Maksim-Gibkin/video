@@ -1,0 +1,42 @@
+:root {
+  --font: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font), serif;
+}
+
+.videoPage {
+  text-align: center;
+  background: var(--black);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 36px;
+}
+
+.videoList {
+  display: grid;
+  grid-template-columns: minmax(240px, 488px) minmax(240px, 488px);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-items: center;
+}
+
+.item {
+}
+
+.paginatorBlock {
+  margin-top: -24px;
+  grid-column-end: span 2;
+  width: 100%;
+
+  @media (max-width: 743px) {
+    & {
+      display: none;
+    }
+  }
+}

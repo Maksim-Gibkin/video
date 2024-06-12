@@ -1,0 +1,56 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 50px;
+}
+
+.dotContainer {
+  display: flex;
+  gap: 8px;
+  max-width: 88px;
+
+  margin-left: calc(50% - 44px);
+}
+
+.center {
+  border-radius: 8px;
+  width: 24px;
+  height: 7px;
+
+  background: #747587;
+}
+
+.navigator {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+
+  .btn {
+    width: 50px;
+    height: 50px;
+    background: var(--gray);
+    border-radius: 50%;
+    padding: 0 0 2px 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prev {
+    transform: rotate(180deg);
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .next {
+  }
+
+  @media (max-width: 1023px) {
+    & {
+      display: none;
+    }
+  }
+}
